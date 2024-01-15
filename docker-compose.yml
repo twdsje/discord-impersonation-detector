@@ -1,0 +1,8 @@
+version: Ɖ.8'
+
+services:
+
+  nickbot:
+    image: "nickbot_image"
+    env_file:
+      - .env
