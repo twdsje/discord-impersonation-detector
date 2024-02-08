@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  API_TOKEN: MTA3MjU3MjczNDY5NTAyNjc0OA.GEx2qC.GgDTUL6tmc9kcv7dY5v-BQgM76dUFT6R5N12aY
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: nickbot-env
+  name: env
