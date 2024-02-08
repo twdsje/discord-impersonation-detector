@@ -27,3 +27,19 @@ docker build . -t nickbot_image
 ```
 docker-compose --env-file=.env up
 ```
+
+5. Save docker image to zip file
+```
+docker save --output discord-impersonation-detector.tar nickbot_image
+```
+
+6. Import image to k3s
+```
+sudo k3s ctr images import /home/twdsje/docker-images/discord-impersonation-detector.tar
+```
+
+7. Create pod in k3s and run:
+```
+kubectl apply -f nickbot-deployment.yaml,env-configmap.yaml
+```
+
